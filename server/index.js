@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -22,6 +20,11 @@ const limiter = rateLimit({
   message: 'Too many requests from this IP, please try again later.'
 });
 app.use(limiter);
+
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the Express server!');
+});
 
 app.post('/send', [
   check('name').not().isEmpty().trim().escape(),
