@@ -44,7 +44,7 @@ function Contact() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/send', { // Ensure this is your actual domain
+      const response = await fetch('https://portfolio-backebd.vercel.app/send', { // Ensure this is your actual domain
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
