@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useTheme } from '../components/ThemeContext';
+import MyPic from '../../images/mypic.png';
 
 function About() {
     const { theme } = useTheme();
@@ -9,7 +10,7 @@ function About() {
         <div className={`about ${theme}  w-full flex-col md:flex-row flex justify-center items-center`}>
             <div className='flex items-center justify-center w-full md:w-1/2 h-96 bg-cover rounded-full overflow-hidden'>
                     <div className={`ring ${theme}  ring-[8px] ring-[#64ffda] ring-offset-1 ring-offset-slate-50 dark:ring-offset-white w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden`}>
-                        <img className='' src="/images/mypic.png" alt="" />
+                        <img className='' src={MyPic} alt="" />
                     </div>
                 </div>
             <div className='w-full md:w-1/2 px-4'>
