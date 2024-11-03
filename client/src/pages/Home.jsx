@@ -6,6 +6,7 @@ import { IoMdDownload } from 'react-icons/io';
 import { useTheme } from '../components/ThemeContext';
 import ProgressBar from '../components/ProgressBar';
 import CircleProgress from '../components/CircleProgress';
+import MyPic from '../../images/mypic.png';
 
 function Home() {
     const { theme } = useTheme();
@@ -25,7 +26,7 @@ function Home() {
                 </div>
                 <div className='flex items-center justify-center w-full md:w-1/2 h-96 bg-cover rounded-full overflow-hidden'>
                     <div className={`ring ${theme} ring-[8px] ring-[#64ffda] ring-offset-1 ring-offset-slate-50 dark:ring-offset-white w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden`}>
-                        <img className='' src="/images/mypic.png" alt="" />
+                        <img className='' src={MyPic} alt="" />
                     </div>
                 </div>
             </div>

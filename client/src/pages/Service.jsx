@@ -1,6 +1,8 @@
 
 import React from 'react'
 import { useTheme } from '../components/ThemeContext';
+import Frontend from '../../images/frontend.png';
+import Backend from '../../images/backend.png';
 
 
 function Service() {
@@ -17,7 +19,7 @@ function Service() {
       <div className='p-4 w-full md:w-1/2 flex flex-col flex-wrap md:flex-row items-center justify-evenly gap-8'>
         <div className='flex flex-col gap-8'>
           <div className={`card ${theme} h-auto w-72`}>
-            <img src="/images/frontend.png" alt="" />
+            <img src={Frontend} alt="" />
             <div className='flex flex-col gap-6 pb-4'>
               <p className='pt-2 text-2xl font-semibold'>Frontend Developer</p>
               <p>Delivering seamless and responsive web design solutions tailored to your unique business needs, ensuring an engaging user experience across all devices.</p>
@@ -27,7 +29,7 @@ function Service() {
         </div>
         <div className='flex flex-col gap-8'>
           <div className={`card ${theme} h-auto w-72 mt-8`}>
-            <img src="/images/backend.png" alt="" />
+            <img src={Backend} alt="" />
             <div className='flex flex-col gap-6 pb-4'>
               <p className='pt-2 text-2xl font-semibold'>Backend Developer</p>
               <p>Our backend services ensure robust, secure, and scalable solutions to power your applications efficiently.</p>
